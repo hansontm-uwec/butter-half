@@ -246,6 +246,8 @@ footer a{
     padding:2rem;
     box-shadow: 3px 3px 0px #3b484a42;
     border:2px solid #2aac92;
+    max-height: 80vh;
+    overflow: scroll;
 }
 .oh-no{
     font-size: 2rem;
@@ -296,6 +298,7 @@ footer a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap:2rem;
     
 }
@@ -407,5 +410,8 @@ textarea{
     }
     footer{
         padding:1rem calc((100% - 56rem)/2);
+    }
+    .cart>form>div{
+        flex-wrap: nowrap;
     }
 }
