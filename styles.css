@@ -356,6 +356,18 @@ textarea{
         right:30%;
     }
 }
+.chat .exit{
+    animation: appear .1s linear 10s 1 both;
+}
+@keyframes appear {
+    from{
+        display: none
+    }
+    to{
+        display: block;
+    }
+    
+}
 @media (min-width:900px){
     header{
         padding:1rem calc((100% - 56rem)/2);
