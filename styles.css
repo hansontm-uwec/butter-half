@@ -204,14 +204,14 @@ label{
     font-weight: 600;
     display: block;
     text-align: center;
-    margin:1rem auto;
+    margin:.5rem auto;
 }
 input[type=number], [type=text], [type=datetime]{
     border:.125rem solid #2aac92;
     background-color:#fdf6e4;
     border-radius:.5rem;
     padding:.5rem;
-    margin-left:.5rem;
+    width: calc(100% - 1.25rem);
 }
 input:focus[type=number], input:focus[type=text], input:focus[type=datetime]{
     border:.125rem solid #4cc7b3;
@@ -238,7 +238,7 @@ footer a{
 
 .cart{
     background-color: #fdf6e4;
-    display: none;
+    display: block;
     position: fixed;
     width: 50vw;
     left:25vw;
@@ -266,6 +266,7 @@ footer a{
     width: 100%;
     display: flex;
     justify-content:center;
+    gap:.5rem;
 }
 .exit{
     background-color: #2aac92;
