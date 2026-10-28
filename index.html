@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Butter Half - Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="overlay toggle-nav"></div>
+    <header>
+        <img src="images/butter-half-logo.svg" alt="The Butter Half">
+        <div class="hamburger" onclick="toggleNav()"><hr><hr><hr></div>
+        <nav class="toggle-nav">
+            <a href="#about">about</a>
+            <a href="#hours">hours</a>
+            <a href="#order">order</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>The Butter Half Bakery</h1>
+            <p>“I’m gonna eat you 'cause baby<br>You're my butter half”</p>
+        </section>
+        <section id="about" class="about">
+            <img src="images/about.png" alt="bread in a basket">
+            <div>
+                <h2>About the Bakery</h2>
+                <p>We make all of our food from scratch, ranging from authentic French baked goods to an assortment of American offerings, and we're proud to provide locally sourced items,and premium organic coffees courtesy of Backroads Coffee.</p>
+                <p>Our creations range from buttery croissants and flaky pain au chocolat to elegant tarts, éclairs, and macarons. Often featuring rich, smooth fillings like pastry cream, ganache, or fruit compotes, patisserie treats are known for their light, airy textures and carefully crafted layers. The balance of sweetness and subtle complexity in each bite reflects a tradition of craftsmanship passed down through generations.</p>
+            </div>
+        </section>
+        <section class="about">
+            <img src="images/classic-cup-of-coffee.png" alt="bread in a basket">
+            <div>
+                <h2>About the Coffee</h2>
+                <p>Established in 1987, Backroads Coffee & Tea began as a small community coffee shop. At the forefront of the 2nd wave specialty coffee movement, Backroads Coffee & Tea offered the Hayward community craft-made specialty coffee beverages, small-batch roasted coffees, and an assortment of imported fine teas. Backroads Coffee & Tea thrived throughout the early nineties roasting specialty coffees for their own use, as well as, offering their customers the ability to purchase their coffees through mail order or direct in-house.</p>
+            </div>
+        </section>
+        <section id="hours" class="hours">
+            <img src="images/timer.svg" alt="blue timer">
+            <div>
+                <h2>Hours</h2>
+                <p>Monday - Thursday<br>
+                    Friday<br>
+                    Saturday<br>
+                    Sunday</p>
+                <ul>
+                    <li>5 am - 4:00 pm</li>
+                    <li>6 am to 4 pm</li>
+                    <li>6:00 am to 6 pm</li>
+                    <li>Closed</li>
+                </ul>
+            </div>
+        </section>
+        <section class="goods" id="order">
+            <img src="images/cookie.svg" alt="cookie">
+            <h2>The Goods</h2>
+            <img src="images/croissant.svg" alt="croissant">
+            <img src="images/bread.svg" alt="bread">
+            <img src="images/pie.svg" alt="pie">
+            <img src="images/donut.svg" alt="chocolate covered donut">
+            <img src="images/pudding.svg" alt="pudding">
+        </section>
+        <section class="order">
+            <form>
+                <div>
+                    <h3>Turtle Danish</h3>
+                    <img src="images/danish.png" alt="delicious danish">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Macarons</h3>
+                    <img src="images/macarons.png" alt="macarons">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Strawberry Meringue</h3>
+                    <img src="images/strawberry-meringue.png" alt="strawberry meringue">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Peach & Raspberry Tart</h3>
+                    <img src="images/peach-and-raspberry-tart.png" alt="Peach and Raspberry tart">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Chocolate & Raspberry Tart</h3>
+                    <img src="images/chocolate-raspberry-tart.png" alt="Fruit tart">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+        
+                <div>
+                    <h3>Chocolate E'clairs</h3>
+                    <img src="images/chocolate-eau-clair.webp" alt="Fruit custard tart">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Fresh Fruit and Lemon Tart</h3>
+                    <img src="images/fruit-tart.webp" alt="Fruit custard tart">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Orange and Custard Gallete</h3>
+                    <img src="images/orange-gallete.webp" alt="Fruit custard tart">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+                <div>
+                    <h3>Pistachio and Strawberry Tart</h3>
+                    <img src="images/pistachio-strawberry-tart.webp" alt="Fruit custard tart">
+                    <label>Qty.<input type="number"></label>
+                    <button onclick="addtoCart()">Add</button>
+                </div>
+        </form>
+        </section>
+        <div class="cart">
+            <form>
+            <h3>Cart</h3>
+            <div>
+                <h4>Item Name</h4>
+                <p>1</p>
+                <p>Price $1.00</p>
+                <label><input type="checkbox">Keep in Cart</label>
+                <label><input type="checkbox">Remove from Cart</label>
+            </div>
+            <h4>Information</h4>
+            <div>
+                <label>First
+                    <input type="text">
+                </label>
+                <label>Last
+                    <input type="text">
+                </label>
+            </div>
+            <label>Address
+                <input type="text">
+            </label>
+            <div>
+                <label>
+                    City
+                    <input type="text">
+                </label>
+                <label>Zipcode
+                    <input type="number">
+                </label>
+            </div>
+            <h4>Payment Information</h4>
+            <label>Card Number
+                <input type="number">
+            </label>
+            <div>
+                <label>Exp. Date
+                    <input type="datetime">
+                </label>
+                <label>Sec. Code
+                    <input type="number">
+                </label>
+            </div>
+            <div>
+            <input type="submit" value="Eat!">
+            <input type="reset" value="Throw it in the trash"></div>
+            <span class="exit" onclick="addtoCart()">X</span>
+        </form>
+    </div>
+    <div class="chat">
+        <span>Chat ^</span>
+        <div>
+            <span>Hi, what can i help you with?</span>
+            <form>
+                <textarea>Type here...</textarea>
+                <input type="submit">
+            </form>
+            <span class="exit">X</span>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div>
+            <a href="#about">About</a>
+            <a href="#hours">Hours</a>
+            <a href="#bakery">The Goods</a>
+        </div>
+        <div class="social">
+            <a href="https://fb.com/"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.pinterest.com/"><img src="images/pinterest.svg" alt="pinterest"></a>
+        </div>
+    </footer>
+</body>
+</html>
