@@ -240,8 +240,8 @@ footer a{
     background-color: #fdf6e4;
     display: block;
     position: fixed;
-    width: 50vw;
-    left:25vw;
+    width: calc(90vw - 4rem);
+    left:5vw;
     top:5vh;
     padding:2rem;
     box-shadow: 3px 3px 0px #3b484a42;
@@ -262,6 +262,9 @@ footer a{
     border:2px solid white;
     box-shadow: 3px 3px 0px #3b484a42;
     animation: fade-in 1s ease-in-out .3s 1 alternate both;
+}
+.oh-no.remove, .cart.remove{
+    display: none;
 }
 @keyframes fade-in{
     from{
@@ -323,15 +326,27 @@ footer a{
 .cart.add{
     display: block
 }
-.chat>span{
+.chat>button{
     position: fixed;
     bottom:1rem;
     right:1rem;
     background-color: #fff;
     font-size: 2rem;
     border: 2px solid #2aac92;
+    width: 10rem;
+    color: #3b484a;
     padding:.5rem;
     border-radius: 2rem;
+    cursor: pointer;
+}
+.chat>button>span{
+    transform-origin: center;
+    transform: rotate(180deg);
+    display: inline-block;
+    transition: transform 1s ease-in-out .5s;
+}
+.chat>button>span.rotate{
+    transform: rotate(0deg);
 }
 .chat>div{
     position: fixed;
@@ -342,6 +357,10 @@ footer a{
     border: 2px solid #2aac92;
     padding:7rem 2rem 2rem;
     font-size: 2rem;
+    width:calc(100% - 6rem);
+}
+.chat>div.hide{
+    animation: hide 10s ease-in-out 1s 1 both;
 }
 textarea{
     width:100%;
@@ -353,8 +372,19 @@ textarea{
     }
     to{
         bottom:20%;
-        right:30%;
+        right:1rem;
     }
+}
+@keyframes hide {
+    from{
+        bottom:20%;
+        right:1rem;
+    }
+    to{
+        bottom:-100%;
+        right:1rem;
+    }
+    
 }
 .chat .exit{
     animation: appear .1s linear 10s 1 both;
@@ -425,5 +455,32 @@ textarea{
     }
     .cart>form>div{
         flex-wrap: nowrap;
+    }
+    .cart{
+        width:50vw;
+        left:25vw;
+    }
+    .chat>div{
+        width:calc(40vw - 6rem);
+    }
+    @keyframes slide-up {
+    from{
+        bottom:-100%;
+        right:1rem;
+    }
+    to{
+        bottom:20%;
+        right:30vw;
+    }
+    }
+    @keyframes hide {
+        from{
+            bottom:20%;
+            right:30vw;
+        }
+        to{
+            bottom:-100%;
+            right:1rem;
+        }
     }
 }
