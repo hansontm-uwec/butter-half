@@ -99,8 +99,26 @@ section.goods{
 section.goods>img{
     width:3rem;
     margin:0 .5rem .5rem;
-    animation: rotate 2s linear infinite;
+    animation-name: rotate;
+    animation-duration:  2s;
+    animation-timing-function:  linear;
+    animation-iteration-count:  infinite;
     transform-origin: center;
+}
+section.goods>img:nth-child(3){
+    animation-delay: .2s;
+}
+section.goods>img:nth-child(4){
+    animation-delay: .4s;
+}
+section.goods>img:nth-child(5){
+    animation-delay: .6s;
+}
+section.goods>img:nth-child(6){
+    animation-delay: .8s;
+}
+section.goods>img:nth-child(7){
+    animation-delay: 1s;
 }
 @keyframes rotate{
     from{
