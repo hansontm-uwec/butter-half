@@ -29,4 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	document.querySelector('.cart .exit').addEventListener('click', function(){
 		document.querySelector('.cart').classList.add('remove');
 	});
+    document.querySelector('.cart input[type=submit]').addEventListener('click', function(){
+		document.querySelector('dialog').classList.add('success');
+	});
 });
