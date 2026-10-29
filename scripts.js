@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.querySelector('.chat>div').classList.remove('hide');
 		document.querySelector('.chat>button>span').classList.remove('rotate');
 	});
+    document.querySelector('.chat input[type=submit]').addEventListener('click', function(){
+		document.querySelector('.chat dialog').classList.add('get-back');
+	});
+    document.querySelector('.chat .button').addEventListener('click', function(){
+		document.querySelector('.chat dialog').classList.remove('get-back');
+	});
 });
 
 //OHNO Section
@@ -30,6 +36,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.querySelector('.cart').classList.add('remove');
 	});
     document.querySelector('.cart input[type=submit]').addEventListener('click', function(){
-		document.querySelector('dialog').classList.add('success');
+		document.querySelector('.cart dialog').classList.add('success');
 	});
 });
