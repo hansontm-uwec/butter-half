@@ -80,6 +80,8 @@ h1{
 h2{
     font-weight: 900;
     color:#f9545b;
+    font-family: "Kablammo", system-ui;
+    font-size: 2rem;
 }
 section{
     background-color:white;
@@ -92,7 +94,7 @@ section.goods{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 section.goods>img{
     width:3rem;
@@ -262,6 +264,9 @@ footer a{
     border:2px solid white;
     box-shadow: 3px 3px 0px #3b484a42;
     animation: fade-in 1s ease-in-out .3s 1 alternate both;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
 }
 .oh-no.remove, .cart.remove{
     display: none;
@@ -342,13 +347,19 @@ dialog>img:nth-child(even){
 .button{
     font-size: 2rem;
     background-color: #fff;
-    padding:2rem;
+    padding:4rem;
+    display: block;
     color:#2aac92;
     text-align: center;
     border-radius: 100%;
-    padding:4rem .5rem;
     text-decoration: none;
     font-weight:900;
+    font-family: "Kablammo", system-ui;
+    width: 140px; /* adjust to control the size */
+    aspect-ratio: 1;
+    --g:/20.56% 20.56% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+    mask: 100% 50% var(--g),93.301% 75% var(--g),75% 93.301% var(--g),50% 100% var(--g),25% 93.301% var(--g),6.699% 75% var(--g),0% 50% var(--g),6.699% 25% var(--g),25% 6.699% var(--g),50% 0% var(--g),75% 6.699% var(--g),93.301% 25% var(--g),radial-gradient(100% 100%,#000 38.366%,#0000 calc(38.366% + 1px));
+
 }
 .button:hover{
     background-color: #f9545b;
@@ -547,5 +558,11 @@ textarea{
             bottom:-100%;
             right:1rem;
         }
+    }
+    .oh-no{
+        flex-direction: row;
+    }
+    button{
+            width: 140px; /* adjust to control the size */
     }
 }
