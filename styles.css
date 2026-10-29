@@ -562,7 +562,7 @@ textarea{
     .oh-no{
         flex-direction: row;
     }
-    button{
+    .button{
             width: 140px; /* adjust to control the size */
     }
 }
