@@ -55,7 +55,7 @@
             <img src="images/timer.svg" alt="blue timer">
             <div>
                 <h2>Hours</h2>
-                <p>Sunday
+                <p>Sunday<br>
                     Monday - Thursday<br>
                     Friday<br>
                     Saturday<br>
@@ -84,35 +84,35 @@
                     <h3>Turtle Danish</h3>
                     <img src="images/danish.png" alt="delicious danish">
                     <p>$5</p>
-                    <label>Qty.<input type="number"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <label>Qty.<input type="number" name="danish" id="danish" min="0" value="1"></label>
+                    <button onclick="addtoCart(); getDanish();">Add</button>
                 </div>
                 <div>
                     <h3>Macarons</h3>
                     <img src="images/macarons.png" alt="macarons">
                     <p>$2</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="macarons" min="0" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
                 <div>
                     <h3>Strawberry Meringue</h3>
                     <img src="images/strawberry-meringue.png" alt="strawberry meringue">
                     <p>$5</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="meringue" min="0" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
                 <div>
                     <h3>Peach & Raspberry Tart</h3>
                     <img src="images/peach-and-raspberry-tart.png" alt="Peach and Raspberry tart">
                     <p>$5</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="peach-and-raspberry-tart" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
                 <div>
                     <h3>Chocolate & Raspberry Tart</h3>
                     <img src="images/chocolate-raspberry-tart.png" alt="Fruit tart">
                     <p>$6</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="chocolate-raspberry-tart" min="0" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
         
@@ -120,28 +120,28 @@
                     <h3>Chocolate E'clairs</h3>
                     <img src="images/chocolate-eau-clair.webp" alt="Fruit custard tart">
                     <p>$4</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="chocolate-eau-clair" min="0" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
                 <div>
                     <h3>Fresh Fruit and Lemon Tart</h3>
                     <img src="images/fruit-tart.webp" alt="Fruit custard tart">
                     <p>$4</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="fruit-tart" min="0" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
                 <div>
                     <h3>Orange and Custard Gallete</h3>
                     <img src="images/orange-gallete.webp" alt="Fruit custard tart">
                     <p>$6</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" name="orange-gallete" min="0" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
                 <div>
                     <h3>Pistachio and Strawberry Tart</h3>
                     <img src="images/pistachio-strawberry-tart.webp" alt="Fruit custard tart">
                     <p>$5</p>
-                    <label>Qty.<input type="number"></label>
+                    <label>Qty.<input type="number" min="0" name="pistachio-strawberry-tart" value="1"></label>
                     <button onclick="addtoCart()">Add</button>
                 </div>
         </form>
@@ -159,6 +159,10 @@
                 <p>Price $1.00</p>
                 <label><input type="checkbox">Keep in Cart</label>
                 <label><input type="checkbox">Remove from Cart</label>
+            </div>
+            <div>
+                <h4>Total</h4>
+                <p>$0.00</p>
             </div>
             <h4>Information</h4>
             <div>
@@ -237,5 +241,6 @@
             <a href="https://www.pinterest.com/"><img src="images/pinterest.svg" alt="pinterest"></a>
         </div>
     </footer>
+    <span>This is a ficticious website designed for a UX Web Design Class.</span>
 </body>
 </html>

@@ -39,3 +39,4 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.querySelector('.cart dialog').classList.add('success');
 	});
 });
+
