@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="scripts.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -80,90 +79,80 @@
         </section>
         <section class="order">
             <form>
-                <div>
+                <div class="danish">
                     <h3>Turtle Danish</h3>
                     <img src="images/danish.png" alt="delicious danish">
                     <p>$5</p>
                     <label>Qty.<input type="number" name="danish" id="danish" min="0" value="1"></label>
-                    <button onclick="addtoCart();">Add</button>
+                    <button type="button">Add</button>
                 </div>
-                <div>
+                <div class="macarons">
                     <h3>Macarons</h3>
                     <img src="images/macarons.png" alt="macarons">
                     <p>$2</p>
                     <label>Qty.<input type="number" name="macarons" min="0" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
-                <div>
+                <div class="strawberry-meringue">
                     <h3>Strawberry Meringue</h3>
                     <img src="images/strawberry-meringue.png" alt="strawberry meringue">
                     <p>$5</p>
                     <label>Qty.<input type="number" name="meringue" min="0" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
                 <div>
-                    <h3>Peach & Raspberry Tart</h3>
+                    <h3 class="peach-and-raspberry-tart">Peach & Raspberry Tart</h3>
                     <img src="images/peach-and-raspberry-tart.png" alt="Peach and Raspberry tart">
                     <p>$5</p>
                     <label>Qty.<input type="number" name="peach-and-raspberry-tart" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
-                <div>
+                <div class="chocolate-raspberry-tart">
                     <h3>Chocolate & Raspberry Tart</h3>
                     <img src="images/chocolate-raspberry-tart.png" alt="Fruit tart">
                     <p>$6</p>
                     <label>Qty.<input type="number" name="chocolate-raspberry-tart" min="0" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
         
-                <div>
+                <div class="chocolate-eau-clair">
                     <h3>Chocolate E'clairs</h3>
                     <img src="images/chocolate-eau-clair.webp" alt="Fruit custard tart">
                     <p>$4</p>
                     <label>Qty.<input type="number" name="chocolate-eau-clair" min="0" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
-                <div>
+                <div class="fruit-tart">
                     <h3>Fresh Fruit and Lemon Tart</h3>
                     <img src="images/fruit-tart.webp" alt="Fruit custard tart">
                     <p>$4</p>
                     <label>Qty.<input type="number" name="fruit-tart" min="0" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
-                <div>
+                <div class="orange-gallete">
                     <h3>Orange and Custard Gallete</h3>
                     <img src="images/orange-gallete.webp" alt="Fruit custard tart">
                     <p>$6</p>
                     <label>Qty.<input type="number" name="orange-gallete" min="0" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
-                <div>
+                <div class="pistachio-strawberry-tart">
                     <h3>Pistachio and Strawberry Tart</h3>
                     <img src="images/pistachio-strawberry-tart.webp" alt="Fruit custard tart">
                     <p>$5</p>
                     <label>Qty.<input type="number" min="0" name="pistachio-strawberry-tart" value="1"></label>
-                    <button onclick="addtoCart()">Add</button>
+                    <button type="button">Add</button>
                 </div>
         </form>
         </section>
-        <div class="cart">
+        <div class="cart add">
             <form>
             <h3>Cart</h3>
             <div class="oh-no">
                 <p>OH NO YOU HAVEN'T PICK A DELICOUS GOODIE YET!!!</p>
                 <a href="#order" class="button">LOOK at OUR GOODIES!</a>
             </div>
-            <div>
-                <h4>Item Name</h4>
-                <p>1</p>
-                <p>Price $1.00</p>
-                <label><input type="checkbox">Keep in Cart</label>
-                <label><input type="checkbox">Remove from Cart</label>
-            </div>
-            <div>
-                <h4>Total</h4>
-                <p>$0.00</p>
-            </div>
+            <div class="cart-items"></div>
             <h4>Information</h4>
             <div>
                 <label>First

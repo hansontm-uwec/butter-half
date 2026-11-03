@@ -257,7 +257,7 @@ footer a{
     width:3rem;
 }
 
-.cart{
+.cart.add{
     background-color: #fdf6e4;
     display: block;
     position: fixed;
@@ -287,7 +287,7 @@ footer a{
     justify-self: center;
     flex-direction: column;
 }
-.oh-no.remove, .cart.remove{
+.oh-no.remove{
     display: none;
 }
 dialog{
@@ -408,12 +408,19 @@ dialog>img:nth-child(even){
 .cart>form{
     justify-content: flex-start;
 }
-.cart>form>div{
+.cart-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-items>div, .cart>form>div{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap:2rem;
     
+}
+.cart-items>div{
+    flex-basis: 100%;
 }
 .cart label{
     width: 100%;
@@ -433,8 +440,8 @@ dialog>img:nth-child(even){
 .exit:hover{
     background-color: #f9545b;
 }
-.cart.add{
-    display: block
+.cart{
+    display: none;
 }
 .chat>button{
     position: fixed;
@@ -565,10 +572,7 @@ textarea{
     footer{
         padding:1rem calc((100% - 56rem)/2);
     }
-    .cart>form>div{
-        flex-wrap: nowrap;
-    }
-    .cart{
+    .cart.add{
         width:50vw;
         left:25vw;
     }
