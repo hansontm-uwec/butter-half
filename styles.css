@@ -315,6 +315,12 @@ dialog.get-back{
     height: unset;
     top:0;
 }
+dialog .exit{
+    background-color: unset;
+    left: unset;
+    top:unset;
+
+}
 .get-back .button{
     background-color: #fff;
     width:100px;
@@ -323,6 +329,7 @@ dialog.get-back{
 .get-back:hover{
     background-color: #2aac92;
 }
+
 @keyframes text-color {
     from{
         color:#fff;

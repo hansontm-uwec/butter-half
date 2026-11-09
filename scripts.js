@@ -23,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 });
 
+//Close success
+document.addEventListener("DOMContentLoaded", function(){
+	document.querySelector('dialog .exit').addEventListener('click', function(){
+		document.querySelector('dialog').classList.remove('success');
+	});
+
+});
+
 //OHNO Section
 document.addEventListener("DOMContentLoaded", function(){
 	document.querySelector('.oh-no>a').addEventListener('click', function(){
